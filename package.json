@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/DexVitalitY/node-project/issues"
   },
-  "homepage": "https://github.com/DexVitalitY/node-project"
+  "homepage": "https://github.com/DexVitalitY/node-project",
+  "dependencies": {
+    "hapi": "^8.4.0"
+  }
 }
