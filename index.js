@@ -2,6 +2,7 @@ var Hapi = require('hapi');
 var server = new Hapi.Server();
 
 server.connection({
+<<<<<<< HEAD
 	host: '0.0.0.0',
 	port: 8080,
   routes: {cors: true}
@@ -26,5 +27,19 @@ server.register(plugins, function (err) {
 //     reply(text);
 // 	}
 // });
+=======
+	host: 'localhost',
+	port: 8001
+});
+
+//add route
+server.route({
+	method: 'GET',
+	path:'/hello',
+	handler: function(request, reply) {
+		reply('hello world');
+	}
+});
+>>>>>>> 693d048e8da1d67ac16cb3cdc8bf71bebdb44440
 
 server.start();
